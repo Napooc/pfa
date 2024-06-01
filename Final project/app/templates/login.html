@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-lg-6 shadow p-1">
+            <h2>Se connecter à PartyPro</h2>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Valider</button>
+            </form>
+        </div>
+        <div class="col lg-6">
+            <img src="https://www.partydoctors.co.uk/images/content/useful-articles/party-planner-kent.jpg" alt="" class="img-fluid img-responsive">
+        </div>
+    </div>
+</div>
+{% endblock %}

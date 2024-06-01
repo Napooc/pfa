@@ -1,0 +1,44 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container mt-5 mb-3" >
+      <h1 class="mb-3"> <strong>Gérer tous les détails tandis que vous profitez pleinement de chaque moment spécial</strong></h1>
+      <div class="row">
+            <div class="col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                        <img src="https://www.brides.com/thmb/J7fmR1rugaIO7V1iTcautPVSwXE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(767x410:769x412)/guests-at-reception-toasting-logal-cole-photography-twitter-0923-1b64ca7e758a4d9f93c89a7b5f708e0d.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Mariage</h5>
+                          <p class="card-text">Un mariage sans stress, grâce à notre application de gestion d'événements.</p>
+                          <br>
+                          <br>
+                          <a href="{% url 'weding' %}" class="btn btn-primary">En savoir plus</a>
+                        </div>
+                      </div>
+            </div>
+
+            <div class="col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                        <img src="https://www.cadeaux.com/blog/wp-content/uploads/2022/07/joyeux-anniversaire-amie-1140x700.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Anniversaire</h5>
+                          <p class="card-text">Transformez chaque anniversaire en une célébration inoubliable avec notre application de gestion d'événements.</p>
+                          <a href="{% url 'birthdays' %}" class="btn btn-primary">En savoir plus</a>
+                          
+                        </div>
+                      </div>
+            </div>
+
+            <div class="col-lg-4">
+                  <div class="card" style="width: 18rem;">
+                        <img src="https://assets-global.website-files.com/61d11361f2619188818de7ca/65a1c21598a862619a3df50d_1.2024%20Why%20you%20should%20have%20a%20grad%20party_feature.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Graduation</h5>
+                          <p class="card-text">Célébrez votre réussite avec style -laissez nous nous occuper.</p>
+                          <a href="{% url 'graduation' %}" class="btn btn-primary">En savoir plus</a>
+                        </div>
+                      </div>
+            </div>
+
+      </div>
+</div>
+{% endblock %}

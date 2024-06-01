@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-lg-6 shadow p-1">
+            <h2><strong>Du diplôme à l'horizon, célébrez chaque réussite avec éclat - PartyPro, pour des graduations mémorables et des lendemains prometteurs.</strong></h2>
+            <p>La remise des diplômes marque la fin d'un chapitre et le début d'une nouvelle aventure excitante. Chez PartyPro, nous comprenons l'importance de cette étape majeure dans la vie de chacun. C'est pourquoi notre application est là pour vous aider à célébrer chaque diplôme avec style et panache. Imaginez une soirée de remise des diplômes inoubliable, où chaque détail est soigneusement orchestré pour rendre hommage à vos réalisations. Des décorations festives aux délicieux mets, en passant par une ambiance électrisante, PartyPro vous offre les outils nécessaires pour créer des souvenirs durables avec vos proches. Que vous organisiez une fête intime à la maison ou une célébration grandiose, notre application simplifie le processus de planification pour que vous puissiez vous concentrer sur la célébration de vos succès. Joignez-vous à nous pour une célébration de fin d'études inoubliable, où chaque moment est digne d'être honoré et partagé.</p>
+            <a href="{% url 'reservation' %}" class="btn btn-warning">reserver maintenant</a>
+        </div>
+        <div class="col-lg-6">
+            <img src="https://i.insider.com/646292303c46f3001898d02d?width=1136&format=jpeg" alt="" class="img-fluid ">
+        </div>
+    </div>
+</div>
+{% endblock %}

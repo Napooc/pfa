@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-lg-6 shadow p-1">
+            <h2><strong>Célébrez l'amour avec élégance - chaque détail, un moment inoubliable.</strong></h2>
+            <p>Plongez dans l'univers enchanteur du mariage avec PartyPro, votre allié ultime dans la planification de cet événement extraordinaire. Que vous rêviez d'une cérémonie intime ou d'une fête grandiose, notre application révolutionnaire offre une panoplie d'outils pour transformer vos idées en réalité. De la création de listes d'invités à la gestion minutieuse du budget, en passant par le choix des lieux et la conception de décors époustouflants, PartyPro simplifie chaque étape du processus, vous permettant de vous concentrer sur l'essentiel : l'amour et la célébration. Avec une interface conviviale et des fonctionnalités innovantes, nous vous accompagnons à chaque instant, assurant que votre journée spéciale soit aussi parfaite que dans vos rêves les plus fous. Laissez PartyPro être le complice de votre bonheur, et préparez-vous à vivre un mariage qui restera gravé dans les mémoires pour les années à venir.</p>
+            <a href="{% url 'reservation' %}" class="btn btn-warning">reserver maintenant</a>
+            
+        </div>
+        <div class="col-lg-6">
+            <img src="https://www.brides.com/thmb/jdY4j9VbqJytJjwgolHx9uP5UiU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/happy-marriage-bride-groom-portrait-abby-jiu-primary-0424-1953ba630d30422c8796c3ed4edbbea0.jpg" alt="" class="img-fluid ">
+        </div>
+    </div>
+</div>
+{% endblock %}

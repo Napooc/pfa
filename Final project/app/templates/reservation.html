@@ -1,0 +1,37 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-lg-6 shadow p-1">
+            <h2>Réservation de Fête</h2>
+            <form id="reservationForm" method="post" action="">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Nom complet:</label>
+                    <input type="text" class="form-control" id="fullName" name="full_Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Numéro de téléphone:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date de la fête:</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+                <div class="mb-3">
+                    <label for="guests" class="form-label">Nombre d'invités:</label>
+                    <input type="number" class="form-control" id="guests" name="guests" min="1" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Réserver</button>
+            </form>
+        </div>
+        <div class="col lg-6">
+            <img src="https://hotel-lousgrits.com/wp-content/uploads/sites/139/2019/09/9-2.jpg" alt="" class="img-fluid ">
+        </div>
+    </div>
+</div>
+{% endblock %}

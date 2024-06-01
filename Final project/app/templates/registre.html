@@ -1,0 +1,47 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-lg-6 shadow p-1">
+            <h2>Créer votre compte à PartyPro</h2>
+            <form method="post">
+              {% csrf_token %}
+                <div class="mb-3">
+                  
+                  <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp" placeholder="Prenom" name="fname">
+            
+                </div>
+                <div class="mb-3">
+                
+                  <input type="text" class="form-control" id="exampleIText" aria-describedby="textHelp" placeholder="Nom de la famille" name="lname" >
+            
+                </div>
+                <div class="mb-3">
+                  
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Addresse e-mail" name="email">
+            
+                </div>
+                <div class="mb-3">
+                  
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Votre Nouveau Mote de passe" name="pwd">
+                </div>
+                <div class="mb-3">
+                
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmer le Mot de passe" name="pwdd" >
+                </div>
+               
+                 <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">se souvenir de moi</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Valider</button>
+              </form>
+        </div>
+        <div class="col lg-6">
+            <img src="https://www.partydoctors.co.uk/images/content/useful-articles/party-planner-kent.jpg" alt="" class="img-fluid img-responsive">
+            
+        </div>
+    </div>
+</div>
+{% endblock %}

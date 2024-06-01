@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-lg-6 shadow p-1">
+            <h2><strong>Célébrez chaque année comme si c'était la première fois - PartyPro rend les anniversaires mémorables, à chaque bougie soufflée.</strong></h2>
+            <p>Chaque anniversaire est une étape importante dans la vie, un moment pour célébrer, se souvenir et créer de précieux souvenirs. Avec notre application PartyPro, nous transformons chaque anniversaire en une expérience mémorable et sans stress. De la planification de la fête parfaite à la coordination des détails, notre application simplifie tout le processus. Imaginez une soirée éblouissante avec des décors personnalisés, une délicieuse sélection de plats et une ambiance festive, le tout organisé en quelques clics. Avec PartyPro, vous pouvez faire de chaque anniversaire un événement inoubliable pour vos proches et pour vous-même. Rejoignez-nous dès aujourd'hui pour créer des moments magiques et pour célébrer la vie en grand.</p>
+            <a href="{% url 'reservation' %}" class="btn btn-warning">reserver maintenant</a>
+        </div>
+        <div class="col-lg-6">
+            <img src="https://cdn.theatlantic.com/thumbor/hIi5kSfHDOnEXk-cVYyrkDuriOM=/311x0:2186x1406/1200x900/media/img/mt/2021/11/GS3693882_Edit/original.jpg" alt="" class="img-fluid ">
+        </div>
+    </div>
+</div>
+{% endblock %}
